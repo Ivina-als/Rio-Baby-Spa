@@ -93,7 +93,7 @@
 .faq__container__item__answer {
   padding: 0 20px 20px 20px;
   font-family: 'Hind';
-  color: var(--faq-answer);
+  color: var(--scheduling-days);
   font-weight: 400;
   line-height: 19px;
   font-size: 12px;
