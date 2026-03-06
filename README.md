@@ -1,4 +1,4 @@
-# 🛁 Rio Baby Spa - Landing Page (SPA Modular)
+# 👶🏼 Rio Baby Spa - Landing Page (SPA Modular)
 
 Este projeto é uma Landing Page desenvolvida para o **Rio Baby Spa**. A arquitetura foi pensada para ser modular e leve, facilitando a futura migração e implementação exclusiva dentro da plataforma **Wix**.
 
