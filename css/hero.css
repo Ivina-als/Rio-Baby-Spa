@@ -1,0 +1,118 @@
+.hero-container {
+  position: relative;
+  background: linear-gradient(to right, #435f66, #305256);
+  font-family: 'Quicksand';
+}
+.hero-container__picture,
+.hero-container__picture__image {
+  width: 100%;
+}
+
+.hero-container__picture {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-container__picture__image {
+  object-fit: cover;
+}
+
+.hero-container__content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding-top: 78px;
+}
+
+.hero-container__content__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-container__content__box__img {
+  width: 200px;
+  object-fit: cover;
+  height: 176px;
+}
+
+.hero-container__content__box__title {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 13px;
+  color: var(--title-hero);
+}
+
+.hero-container__content__box__anchor {
+  background-color: var(--anchor-background-hero);
+  color: var(--anchor-color-hero);
+  border-radius: 6px;
+  margin-top: 62px;
+  min-height: 37px;
+  display: flex;
+  min-width: 186px;
+  justify-content: center;
+  font-weight: 600;
+  padding: 6px;
+  align-items: center;
+}
+.hero-container__content__box__anchor:hover {
+  background-color: var(--faq--destak);
+}
+.hero-container__content__box__subtitle {
+  padding-top: 18px;
+  color: var(--subtitle-hero);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container__content {
+    padding-top: 66px;
+  }
+  .hero-container__content__box__img {
+    width: 250px;
+    height: 220px;
+  }
+  .hero-container__content__box__title {
+    padding-top: 0;
+    font-size: 36px;
+  }
+  .hero-container__content__box__anchor {
+    margin-top: 40px;
+  }
+  .hero-container__content__box__subtitle {
+    padding-top: 26px;
+    width: 60%;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .hero-container__content__box__img {
+    width: 300px;
+    height: 263px;
+  }
+  .hero-container__picture__image {
+    max-width: 1920px;
+  }
+
+  .hero-container__content__box__title {
+    font-size: 46px;
+    width: 70%;
+    max-width: 755px;
+  }
+  .hero-container__content__box__anchor {
+    margin-top: 28px;
+  }
+
+  .hero-container__content__box__subtitle {
+    padding-top: 42px;
+    width: 40%;
+    max-width: 430px;
+  }
+}

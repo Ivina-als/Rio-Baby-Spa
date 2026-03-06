@@ -1,0 +1,261 @@
+#who-we-are-root {
+  background-color: var(--backgorund-who-we-are);
+  overflow: hidden;
+}
+
+.who-we-are__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.who-we-are__container__content-wrapper {
+  max-height: 350px;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  overflow: visible;
+}
+
+.who-we-are__container__hidden-checkbox:checked
+  ~ .width-container
+  .who-we-are__container__content-wrapper {
+  max-height: 2500px;
+  padding-bottom: 20px;
+}
+
+.who-we-are__container__hidden-checkbox:checked
+  ~ .width-container
+  .who-we-are__container__content-wrapper__button,
+.who-we-are__container__hidden-checkbox:checked
+  ~ .width-container
+  .who-we-are__container__overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.who-we-are__container__content-wrapper__button {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--subtitle-hero);
+  color: var(--service-text);
+  padding: 7px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Quicksand';
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+  min-width: 102px;
+}
+
+.who-we-are__container__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(transparent, var(--backgorund-who-we-are) 80%);
+  pointer-events: none;
+  z-index: 5;
+  transition: opacity 0.3s ease;
+}
+
+.who-we-are__container__content-wrapper__title {
+  font-family: 'DynaPuff';
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--anchor-nav-color);
+  margin-top: 24px;
+}
+
+.who-we-are__container__content-wrapper__layout__el1,
+.who-we-are__container__content-wrapper__layout__el1__box,
+.who-we-are__container__content-wrapper__layout__el2__box,
+.who-we-are__container__content-wrapper__layout__el1__el4,
+.who-we-are__container__content-wrapper__layout__el2 {
+  display: flex;
+}
+
+.who-we-are__container__content-wrapper__layout__el1__img {
+  display: none;
+}
+
+.who-we-are__container__content-wrapper__layout {
+  margin-top: 20px;
+}
+
+.who-we-are__container__content-wrapper__layout p {
+  color: var(--fonts-who-we-are);
+  font-family: 'Hind';
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.who-we-are__container__content-wrapper__layout__el1__box,
+.who-we-are__container__content-wrapper__layout__el2__box {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.who-we-are__container__content-wrapper__layout__el4__img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.who-we-are__container__content-wrapper__layout__el1__el4 {
+  justify-content: center;
+}
+
+.who-we-are__container__content-wrapper__layout__el2__img {
+  width: 210px;
+  position: relative;
+  right: 157px;
+  top: -190px;
+  object-fit: contain;
+}
+
+.who-we-are__container__content-wrapper__layout__el2__box {
+  padding-top: 24px;
+}
+
+.emphasis__text {
+  position: relative;
+  min-width: 320px;
+}
+
+.who-we-are__container__content-wrapper__layout__el2 {
+  max-height: 300px;
+  position: relative;
+}
+
+.paragraph__modified__top {
+  min-height: 88px;
+}
+
+.paragraph__modified {
+  width: 60%;
+  min-height: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .who-we-are__container__overlay,
+  .who-we-are__container__content-wrapper__button {
+    display: none;
+  }
+
+  .who-we-are__container__content-wrapper {
+    max-height: 100%;
+    min-height: 870px;
+  }
+
+  .who-we-are__container {
+    min-height: 875px;
+  }
+
+  .who-we-are__container__content-wrapper__layout {
+    margin-top: 40px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1__img,
+  .who-we-are__container__content-wrapper__layout__el2 {
+    display: flex;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el4__img {
+    display: none;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1__box p,
+  .who-we-are__container__content-wrapper__layout__el2__box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1 {
+    max-height: 300px;
+    gap: 20px;
+    position: relative;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1__box {
+    width: 70%;
+    gap: 34px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1__img {
+    display: block;
+    position: relative;
+    top: -100px;
+  }
+
+  .who-we-are__container__content-wrapper__title {
+    font-size: 42px;
+    margin-top: 48px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2__img {
+    width: 450px;
+    right: -11px;
+    top: -74px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2__box {
+    min-width: 50%;
+    gap: 26px;
+  }
+
+  .paragraph__modified {
+    width: 100%;
+    min-height: inherit;
+  }
+
+  .emphasis__text {
+    position: static;
+    min-width: 100%;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2__box p:last-of-type {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .who-we-are__container {
+    min-height: 950px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2__img {
+    width: 100%;
+    right: -37px;
+    top: -55px;
+  }
+
+  .who-we-are__container__content-wrapper__layout p {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el1__box {
+    width: 55%;
+    justify-content: center;
+  }
+
+  .who-we-are__container__content-wrapper__title {
+    margin-top: 64px;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2 {
+    max-height: none;
+  }
+
+  .who-we-are__container__content-wrapper__layout__el2__box {
+    gap: 40px;
+  }
+}

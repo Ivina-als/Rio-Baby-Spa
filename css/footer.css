@@ -1,0 +1,125 @@
+.footer-container {
+  position: relative;
+}
+
+.footer-container__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+}
+
+.footer-container__picture__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container__content__arrow_up {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.footer-container__content__social__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-container__content__social__media__title,
+.footer-container__content__gps__title {
+  font-family: 'Quicksand';
+  font-size: 12;
+  font-weight: 400;
+  opacity: 80%;
+  color: var(--for-who-title);
+}
+
+.footer-container__content__social__media__icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-container__content__gps {
+  width: 213px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-container__content__gps__address {
+  font-family: 'Hind';
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--for-who-title);
+  text-decoration: underline;
+}
+
+.footer-container__content__gps__address__no__prefix {
+  display: block;
+  line-height: 19px;
+}
+
+.footer-container__content__gps__address__prefix {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container__content__gps {
+    width: 423px;
+  }
+
+  .footer-container__content__social__media__title,
+  .footer-container__content__gps__title,
+  .footer-container__content__gps__address {
+    font-size: 14px;
+  }
+
+  .footer-container__content__arrow_up {
+    bottom: 85px;
+    right: 40px;
+    width: 54px;
+    height: 58px;
+  }
+
+  .footer-container__content__logo__img {
+    width: 178px;
+    height: 156px;
+  }
+
+  .footer-container__content__social__media__icons__img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-container__content__gps__address {
+    width: 423px;
+  }
+
+  .footer-container__content__gps__address__no__prefix {
+    display: none;
+  }
+
+  .footer-container__content__gps__address__prefix {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .footer-container__content__logo__img {
+    width: 218px;
+    height: 192px;
+  }
+
+  .footer-container__content__arrow_up {
+    bottom: 75px;
+    right: 65px;
+  }
+}

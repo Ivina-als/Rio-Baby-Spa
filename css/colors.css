@@ -1,0 +1,35 @@
+:root {
+  --title-hero: #00d2b7;
+  --anchor-background-hero: #ffc351;
+  --anchor-color-hero: #0f282f;
+  --subtitle-hero: #95cedd;
+
+  --anchor-nav-color: #1e505e;
+
+  --backgorund-who-we-are: #f7fffe;
+  --fonts-who-we-are: #14353e;
+
+  --for-who-container: #498596;
+  --for-who-title: #c0faf2;
+
+  --faq-background: #20282a;
+  --faq--destak: #ffaf1a;
+  --faq-general-green: #26ccb5;
+  --faq-question: #16a3a4;
+  --faq-answer: #16a3a4;
+
+  --instructions-alert: #d04949;
+
+  --partners-background: #ecfefd;
+  --partners-subtitle: #2e788d;
+
+  --scheduling-days: #dffffb;
+
+  --service-text: #0a0e0e;
+  --service-anchor: #a8c874;
+  --service-wrapper: #1a1a1a;
+  --service-disabled-plan-text: #3e404c;
+  --service-disabled-plan: #b3b3b3;
+
+  --white-full: #fff;
+}

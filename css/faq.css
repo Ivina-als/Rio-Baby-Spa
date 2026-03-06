@@ -1,0 +1,208 @@
+.faq__container {
+  width: 100%;
+  height: auto;
+  background-color: var(--faq-background);
+  overflow: hidden;
+}
+.faq__container__base-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__container__img {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right bottom;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+  min-width: 1536px;
+}
+
+.faq__container__box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.faq__container__box__content {
+  width: 100%;
+}
+
+.faq__container__title {
+  color: var(--for-who-title);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'DynaPuff';
+  padding: 24px 0 44px;
+}
+
+.faq__container__item {
+  border: 1px solid var(--faq-general-green);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  background: transparent;
+  transition: all 0.3s ease;
+  overflow: visible;
+}
+
+.faq__container__item__question__text {
+  color: var(--faq-general-green);
+  font-family: 'Quicksand';
+  font-size: 14px;
+}
+
+.faq__container__item__question {
+  padding: 18px 20px;
+  color: var(--faq-question);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq__container__item__question__icon {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--faq-general-green);
+  border-bottom: 2px solid var(--faq-general-green);
+  transform: rotate(45deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq__container__item__answer-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  border-radius: 0 0 12px 12px;
+}
+
+.faq__container__item__answer {
+  padding: 0 20px 20px 20px;
+  font-family: 'Hind';
+  color: var(--faq-answer);
+  font-weight: 400;
+  line-height: 19px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.faq__container__item--active {
+  background-color: rgba(48, 235, 235, 0.05);
+
+  border-color: transparent;
+}
+
+.faq__container__item--active .faq__container__item__question__text {
+  font-size: 10px;
+}
+
+.faq__container__item--active .faq__container__item__answer-container {
+  max-height: 1000px;
+  transition: max-height 0.8s cubic-bezier(1, 0, 1, 0);
+}
+
+.faq__container__item--active .faq__container__item__answer {
+  opacity: 1;
+}
+
+.faq__container__item--active .faq__container__item__question__icon {
+  transform: rotate(225deg);
+}
+
+.faq__container__item__bubble {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  width: 25px;
+}
+
+.faq__container__item__bubble.left {
+  left: -11px;
+  top: 0;
+  transform: translateX(-10px);
+}
+
+.faq__container__item__bubble.right {
+  right: -14px;
+  bottom: 0;
+  transform: translateX(10px);
+}
+
+.faq__container__item--active .faq__container__item__bubble {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.faq__destak {
+  color: var(--faq--destak);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .faq__container__img {
+    object-position: 95% center;
+  }
+
+  .faq__container__title {
+    font-size: 48px;
+    padding: 48px 0 38px;
+  }
+  .faq__container__box {
+    padding-bottom: 42px;
+    display: flex;
+    justify-content: center;
+  }
+  .faq__container__box__content {
+    max-width: 831px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .faq__container__base-section__img {
+    position: relative;
+  }
+  .faq__container__img {
+    object-position: 95% center;
+    top: 53px;
+    left: -20%;
+    min-height: 1024px;
+    position: absolute;
+  }
+  .faq__container__item__question__text {
+    font-size: 24px;
+  }
+  .faq__container__item--active .faq__container__item__question__text {
+    font-size: 18px;
+  }
+
+  .faq__container__item--active .faq__container__item__answer__text {
+    font-size: 22px;
+  }
+  .faq__container__box {
+    padding-bottom: 62px;
+  }
+
+  .faq__container__title {
+    font-size: 62px;
+    padding: 62px 0 38px;
+  }
+}

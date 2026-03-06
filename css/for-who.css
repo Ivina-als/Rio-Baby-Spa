@@ -1,0 +1,107 @@
+.for-who__container {
+  overflow: hidden;
+  background: var(--for-who-container);
+  width: 100%;
+  height: 100%;
+}
+.for_who__container__box__content {
+  padding-bottom: 21px;
+}
+
+.for-who__container__box__content__left__title {
+  color: var(--for-who-title);
+  font-family: 'DynaPuff';
+  font-size: 28px;
+  font-weight: 700;
+  padding-block: 24px;
+}
+.for-who__container__box__content__left__box,
+.for_who__container__box__content__right__picture {
+  display: flex;
+}
+.for-who__container__box__content__left__box {
+  flex-direction: column;
+  gap: 26px;
+}
+.for-who__container__box__content__left__box p {
+  font-family: 'Hind';
+  font-size: 16px;
+  color: var(--backgorund-who-we-are);
+  line-height: 32px;
+  font-weight: 400;
+}
+.for_who__container__box__content__right__picture {
+  width: 100%;
+  justify-content: center;
+}
+.for_who__container__box__content__right__picture__img {
+  width: 417px;
+  height: fit-content;
+  position: relative;
+  left: 58px;
+}
+
+@media screen and (min-width: 768px) {
+  .for-who__container {
+    min-height: 380px;
+  }
+  .for_who__container__box__content {
+    display: flex;
+    padding: 26px 0 22px 0;
+    height: 100%;
+    gap: 40px;
+    min-height: 380px;
+    align-items: center;
+  }
+
+  .for-who__container__box__content__left__title {
+    padding: 0 0 25px 0;
+    font-size: 42px;
+  }
+
+  .for-who__container__box__content__left {
+    min-width: 320px;
+  }
+
+  .for-who__container__box__content__left__box {
+    gap: 20px;
+  }
+
+  .for-who__container__box__content__left__box p {
+    font-size: 20px;
+  }
+
+  .for_who__container__box__content__right__picture {
+    height: 100%;
+    align-items: center;
+  }
+
+  .for_who__container__box__content__right__picture__img {
+    left: 0;
+    min-width: 493px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .for_who__container__box__content {
+    gap: 40px;
+  }
+  .for-who__container__box__content__left__title {
+    font-size: 62px;
+  }
+  .for-who__container__box__content__left__box {
+    gap: 30px;
+  }
+  .for-who__container__box__content__left__box p {
+    font-size: 26px;
+  }
+
+  .for-who__container__box__content__left {
+    min-width: 590px;
+  }
+
+  .for_who__container__box__content__right__picture__img {
+    left: 10%;
+  }
+}

@@ -1,0 +1,226 @@
+/* ============================================================
+   FAMÍLIA DYNAPUFF 
+   ============================================================ */
+
+/* --- Padrão --- */
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../assets/fonts/DynaPuff-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../assets/fonts/DynaPuff-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../assets/fonts/DynaPuff-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../assets/fonts/DynaPuff-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Condensed --- */
+@font-face {
+  font-family: 'DynaPuff Condensed';
+  src: url('../assets/fonts/DynaPuff_Condensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff Condensed';
+  src: url('../assets/fonts/DynaPuff_Condensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff Condensed';
+  src: url('../assets/fonts/DynaPuff_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- DynaPuff SemiCondensed --- */
+@font-face {
+  font-family: 'DynaPuff SemiCondensed';
+  src: url('../assets/fonts/DynaPuff_SemiCondensed-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff SemiCondensed';
+  src: url('../assets/fonts/DynaPuff_SemiCondensed-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff SemiCondensed';
+  src: url('../assets/fonts/DynaPuff_SemiCondensed-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff SemiCondensed';
+  src: url('../assets/fonts/DynaPuff_SemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   FAMÍLIA HIND 
+   ============================================================ */
+@font-face {
+  font-family: 'Hind';
+  src: url('../assets/fonts/Hind-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('../assets/fonts/Hind-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('../assets/fonts/Hind-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('../assets/fonts/Hind-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url('../assets/fonts/Hind-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   FAMÍLIA HIND GUNTUR
+   ============================================================ */
+@font-face {
+  font-family: 'Hind Guntur';
+  src: url('../assets/fonts/HindGuntur-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Guntur';
+  src: url('../assets/fonts/HindGuntur-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Guntur';
+  src: url('../assets/fonts/HindGuntur-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Guntur';
+  src: url('../assets/fonts/HindGuntur-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Guntur';
+  src: url('../assets/fonts/HindGuntur-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
+   FAMÍLIA QUICKSAND
+   ============================================================ */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../assets/fonts/Quicksand-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../assets/fonts/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../assets/fonts/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../assets/fonts/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../assets/fonts/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,274 @@
+.instructions-container {
+  position: relative;
+  overflow: hidden;
+  height: 1157px;
+  padding-top: 20px;
+}
+
+.instructions-container__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  gap: 20px;
+}
+
+.instructions-container__picture__img__left {
+  object-fit: cover;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  height: 690px;
+  width: auto;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.instructions-container__picture__img__right {
+  object-fit: cover;
+  position: absolute;
+  right: -161px;
+  top: 0;
+  height: 1157px;
+  width: auto;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.instructions-container__content__header,
+.instructions-container__content__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instructions-container__content__header h1,
+.instructions-container__content__checkbox__header h1 {
+  font-family: 'DynaPuff';
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--anchor-nav-color);
+}
+
+.instructions-container__content__header p,
+.instructions-container__content__checkbox__header p {
+  font-family: 'Hind Guntur';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--anchor-nav-color);
+}
+
+.instructions-container__content__body h2 {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--fonts-who-we-are);
+}
+
+.instructions-container__content__body p {
+  font-family: 'Hind Guntur';
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--fonts-who-we-are);
+}
+
+.instructions-container__content__body span {
+  font-weight: 700;
+}
+
+.instructions-container__content__body__text__red {
+  font-weight: 700;
+  color: var(--instructions-alert);
+}
+
+.instructions-container__content__checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.instructions-container__content__checkbox__text {
+  display: flex;
+  gap: 16px;
+}
+
+.instructions-container__content__checkbox__text p {
+  font-family: 'Hind Guntur';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--anchor-nav-color);
+}
+
+.instructions-container__content__checkbox__text span {
+  font-family: 'Hind Guntur';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--instructions-alert);
+  text-align: start;
+}
+
+.instructions-container__content__checkbox__header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.instructions-container__content__checkbox__remedy__img {
+  display: none;
+}
+
+.instructions-container__content__checkbox__text__p__modile {
+  display: block;
+}
+
+.instructions-container__content__checkbox__text__p__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .instructions-container {
+    height: 1479px;
+    padding-top: 50px;
+  }
+
+  .instructions-container__content {
+    max-width: 750px;
+    gap: 32px;
+  }
+
+  .instructions-container__picture__img__left {
+    left: -122px;
+  }
+
+  .instructions-container__picture__img__right {
+    right: -185px;
+    top: 0;
+    height: 1456px;
+  }
+
+  .instructions-container__content__header,
+  .instructions-container__content__body {
+    max-width: 472px;
+  }
+
+  .instructions-container__content__checkbox {
+    gap: 28px;
+  }
+
+  .instructions-container__content__header h1,
+  .instructions-container__content__checkbox__header h1 {
+    font-size: 42px;
+  }
+
+  .instructions-container__content__header p {
+    font-size: 20px;
+  }
+
+  .instructions-container__content__body h2,
+  .instructions-container__content__checkbox__header p,
+  .instructions-container__content__body p {
+    font-size: 20px;
+  }
+
+  .instructions-container__content__checkbox__text p,
+  .instructions-container__content__checkbox__text span {
+    font-size: 20px;
+    width: 368px;
+    text-align: left;
+  }
+
+  .instructions-container__content__checkbox__text img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .instructions-container__content__checkbox__remedy__img {
+    display: block;
+    position: relative;
+  }
+
+  .instructions-container__content__checkbox__remedy__img__img {
+    position: absolute;
+    right: -12px;
+    top: -410px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .instructions-container {
+    height: 1685px;
+  }
+
+  .instructions-container__content {
+    max-width: 1050px;
+    gap: 46px;
+  }
+
+  .instructions-container__picture__img__right {
+    right: -195px;
+    top: 90px;
+    height: 1596px;
+  }
+
+  .instructions-container__content__checkbox {
+    gap: 18px;
+    padding-top: 20px;
+  }
+
+  .instructions-container__content__body {
+    max-width: 472px;
+    gap: 12px;
+  }
+
+  .instructions-container__picture__img__left {
+    left: -162px;
+    top: 60px;
+  }
+
+  .instructions-container__content__header {
+    max-width: 738px;
+  }
+
+  .instructions-container__content__header h1,
+  .instructions-container__content__checkbox__header h1 {
+    font-size: 62px;
+  }
+
+  .instructions-container__content__checkbox__header {
+    gap: 8px;
+  }
+
+  .instructions-container__content__checkbox__header p,
+  .instructions-container__content__header p {
+    font-size: 26px;
+  }
+
+  .instructions-container__content__checkbox__text p,
+  .instructions-container__content__checkbox__text span {
+    font-size: 26px;
+    width: 568px;
+  }
+
+  .instructions-container__content__checkbox__text img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .instructions-container__content__checkbox__remedy__img__img {
+    right: 0;
+    top: -486px;
+  }
+
+  .instructions-container__content__checkbox__text__p__modile {
+    display: none;
+  }
+
+  .instructions-container__content__checkbox__text__p__desktop {
+    display: block;
+  }
+}
