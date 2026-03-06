@@ -49,36 +49,30 @@ function openModal(button) {
   const picture = document.querySelector(
     '.services__container__modal__content__box__picture',
   );
-  const source = picture?.querySelector('source');
   const img = picture?.querySelector('img');
+  const source = picture?.querySelector('source');
   const dataButton = button.getAttribute('data-plan');
-  const anchorPlan = document.querySelector(
-    '.services__container__modal__content__box__package__benefits__box-right__anchor',
-  );
 
-  if (modal && img && source) {
+  if (modal && img) {
     modal.classList.remove('modal-ready');
-
-    const parent = button.closest(
-      '.services__container__box__carousel__service',
-    );
-    img.style.filter = 'none';
-    anchorPlan?.classList.remove('disabled__plan');
-
-    if (parent && parent.classList.contains('service__disabled')) {
-      img.style.filter = 'grayscale(80%)';
-      anchorPlan?.classList.add('disabled__plan');
-    }
+    modal.style.display = 'block';
 
     renderPlan(button, plansData);
 
-    img.src = `assets/images/bubblecard_oppen_mobile-${dataButton}.webp`;
-    source.srcset = `assets/images/bubblecard_oppen_desktop-${dataButton}.webp`;
+    const mobileSrc = `assets/images/bubblecard_oppen_mobile-${dataButton}.webp`;
+    const desktopSrc = `assets/images/bubblecard_oppen_desktop-${dataButton}.webp`;
 
-    modal.style.display = 'block';
-    requestAnimationFrame(() => {
-      modal.classList.add('modal-ready');
-    });
+    if (source) source.srcset = desktopSrc;
+    img.src = mobileSrc;
+
+    img
+      .decode()
+      .then(() => {
+        modal.classList.add('modal-ready');
+      })
+      .catch(() => {
+        modal.classList.add('modal-ready');
+      });
   }
 }
 

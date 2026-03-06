@@ -210,8 +210,17 @@
     visibility 0.5s;
 }
 
+.services__container__modal__content__box__package,
+.services__container__modal__content__box__close {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out;
+}
+
 .services__container__modal.modal-ready
-  .services__container__modal__content__box__package {
+  .services__container__modal__content__box__package,
+.services__container__modal.modal-ready
+  .services__container__modal__content__box__close {
   opacity: 1;
   visibility: visible;
 }
