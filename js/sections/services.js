@@ -52,6 +52,7 @@ function openModal(button) {
   const img = picture?.querySelector('img');
   const source = picture?.querySelector('source');
   const dataButton = button.getAttribute('data-plan');
+  const parent = button.closest('.services__container__box__carousel__service');
 
   if (modal && img) {
     modal.classList.remove('modal-ready');
@@ -63,8 +64,12 @@ function openModal(button) {
     const desktopSrc = `assets/images/bubblecard_oppen_desktop-${dataButton}.webp`;
 
     if (source) source.srcset = desktopSrc;
-    img.src = mobileSrc;
-
+    if (img) img.src = mobileSrc;
+    if (parent && parent.classList.contains('service__disabled')) {
+      modal.style.filter = 'grayscale(90%)';
+    } else {
+      modal.style.filter = 'none';
+    }
     img
       .decode()
       .then(() => {
@@ -80,6 +85,8 @@ function renderPlan(button, plansData) {
   const planKey = button.dataset.plan;
   const plan = plansData.find((p) => p.plan === planKey);
   if (!plan) return;
+
+  const parent = button.closest('.services__container__box__carousel__service');
 
   const modalContent = document.querySelector(
     '.services__container__modal__content__box__package',
@@ -105,7 +112,9 @@ function renderPlan(button, plansData) {
 
   left.innerHTML = '';
   right.innerHTML = '';
+
   if (anchor) anchor.href = '';
+
   if (alert) alert.innerHTML = '';
 
   title.innerHTML = plan.title || '';
@@ -138,7 +147,14 @@ function renderPlan(button, plansData) {
   renderGroup(left, plan.details['left-block']);
   renderGroup(right, plan.details['right-block']);
 
-  if (anchor && plan.anchor) anchor.href = plan.anchor;
+  if (anchor && parent) {
+    anchor.href = plan.anchor;
+
+    parent.classList.contains('service__disabled')
+      ? anchor.classList.add('disabled__plan')
+      : anchor.classList.remove('disabled__plan');
+  }
+
   if (alert && plan.alert) alert.innerHTML = plan.alert;
 
   stopScroll();

@@ -87,6 +87,8 @@ const plansData = [
         },
       ],
     },
+    anchor:
+      'https://api.whatsapp.com/send/?phone=5521973048827&text&type=phone_number&app_absent=0',
   },
   {
     title: 'Anti-Cólica',
@@ -113,6 +115,8 @@ const plansData = [
         },
       ],
     },
+    anchor:
+      'https://api.whatsapp.com/send/?phone=5521973048827&text&type=phone_number&app_absent=0',
   },
   {
     title: 'Pós Vacina',
