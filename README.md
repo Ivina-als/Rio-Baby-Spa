@@ -42,7 +42,7 @@ O código segue o padrão de **Single Page Application (SPA)** manual para garan
 - **Performance**:
   - Renderização sob demanda via JavaScript.
   - Uso de imagens em formato `.webp` com `lazy loading` para otimização de banda.
-
+- **Sistema de pagamento e agendamento completos**. 
 ---
 
 ## 📝 Observações para Implementação no Wix
